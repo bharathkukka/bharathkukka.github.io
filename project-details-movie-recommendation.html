@@ -26,7 +26,15 @@
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
-  
+   <style>
+    .portfolio-details-slider .swiper-slide img {
+      width: 100%;
+      height: 400px;
+      object-fit: contain;
+      background: #222;
+      display: block;
+    }
+  </style>
 </head>
 
 <body class="portfolio-details-page">
@@ -99,7 +107,7 @@
                   "loop": true,
                   "speed": 600,
                   "autoplay": {
-                    "delay": 5000
+                    "delay": 3000
                   },
                   "slidesPerView": "auto",
                   "pagination": {
@@ -112,14 +120,12 @@
 
               <div class="swiper-wrapper align-items-center">
                 <div class="swiper-slide">
-                  <img src="assets/img/portfolio/portfolio-portrait-4.webp" alt="Movie Recommendation Image 1" class="img-fluid" loading="lazy">
+                  <img src="assets/img/portfolio/MRS/IDM.png" alt="Movie Recommendation Image 1" class="img-fluid" loading="lazy">
                 </div>
                 <div class="swiper-slide">
-                  <img src="assets/img/portfolio/portfolio-1.webp" alt="Movie Recommendation Image 2" class="img-fluid" loading="lazy">
+                  <img src="assets/img/portfolio/MRS/AM.png" alt="Movie Recommendation Image 2" class="img-fluid" loading="lazy">
                 </div>
-                <div class="swiper-slide">
-                  <img src="assets/img/portfolio/portfolio-2.webp" alt="Movie Recommendation Image 3" class="img-fluid" loading="lazy">
-                </div>
+               
               </div>
               <div class="swiper-pagination"></div>
             </div>
@@ -130,58 +136,61 @@
               <h3>Project Information</h3>
               <ul>
                 <li><strong>Category</strong>: Machine-Learning</li>
-                <li><strong>Client</strong>: CineFlow Platforms</li>
+                
                 <li><strong>Project date</strong>: March 20, 2024</li>
-                <li><strong>Project URL</strong>: <a href="https://www.recommend-movies.ai" target="_blank">www.recommend-movies.ai</a></li>
+                <li><strong>Project URL</strong>: <a href="https://github.com/bhaarath22/MovieRecommendationSystem" target="_blank">GitHub Repo</a></li>
               </ul>
             </div>
           </div>
 
           <div class="col-lg-12">
             <div class="portfolio-description" data-aos="fade-up" data-aos-delay="300">
-              <h2>Movie Recommendation System: Personalized Entertainment</h2>
+              <h2>Movie Recommendation System: Content-Based Approach</h2>
               <p>
-                This project develops a sophisticated movie recommendation system designed to provide personalized film suggestions to users. It employs machine learning algorithms, including collaborative filtering and content-based filtering, to analyze user preferences and viewing history.
+                This project features a content-based movie recommendation system that suggests films to users by analyzing movie metadata and user-selected preferences. It focuses on attributes like genres, keywords, and overviews to identify and recommend movies similar to those a user enjoys.
               </p>
               <p>
-                The system's goal is to enhance user experience by suggesting movies they are most likely to enjoy, thereby increasing engagement with streaming platforms. It handles large datasets efficiently and continuously learns from new user interactions to refine its recommendations.
+                The system leverages Natural Language Processing (NLP) methods such as tokenization, stemming, and cosine similarity for comparing movie features. Built in Python using libraries including pandas, scikit-learn, and NLTK, it is trained and evaluated on the TMDB 5000 Movie Dataset.
+              </p>
+              <p>
+                Users receive five movie recommendations based on their selected title if it exists in the dataset; otherwise, they can input custom movie details for suggestions. The system is designed for extensibility and can be enhanced with additional data or user feedback.
               </p>
 
               <div class="features mt-4">
-                <h3>Key Features</h3>
-                <div class="row gy-3">
-                  <div class="col-md-6">
-                    <div class="feature-item" data-aos="fade-up" data-aos-delay="400">
-                      <i class="bi bi-star"></i>
-                      <h4>Personalized Recommendations</h4>
-                      <p>Suggests movies tailored to individual user tastes and watch history.</p>
-                    </div>
-                  </div>
-
-                  <div class="col-md-6">
-                    <div class="feature-item" data-aos="fade-up" data-aos-delay="500">
-                      <i class="bi bi-filter"></i>
-                      <h4>Collaborative & Content Filtering</h4>
-                      <p>Combines multiple ML techniques for robust and diverse suggestions.</p>
-                    </div>
-                  </div>
-
-                  <div class="col-md-6">
-                    <div class="feature-item" data-aos="fade-up" data-aos-delay="600">
-                      <i class="bi bi-database"></i>
-                      <h4>Scalable Data Handling</h4>
-                      <p>Efficiently processes large movie and user datasets for real-time recommendations.</p>
-                    </div>
-                  </div>
-
-                  <div class="col-md-6">
-                    <div class="feature-item" data-aos="fade-up" data-aos-delay="700">
-                      <i class="bi bi-arrow-repeat"></i>
-                      <h4>Continuous Learning</h4>
-                      <p>System improves its accuracy with every new user interaction and rating.</p>
-                    </div>
-                  </div>
+              <h3>Key Features</h3>
+              <div class="row gy-3">
+                <div class="col-md-6">
+                <div class="feature-item" data-aos="fade-up" data-aos-delay="400">
+                  <i class="bi bi-star"></i>
+                  <h4>Personalized Suggestions</h4>
+                  <p>Recommends movies based on individual user preferences and selected titles.</p>
                 </div>
+                </div>
+
+                <div class="col-md-6">
+                <div class="feature-item" data-aos="fade-up" data-aos-delay="500">
+                  <i class="bi bi-filter"></i>
+                  <h4>Content-Based Filtering</h4>
+                  <p>Uses movie metadata and NLP techniques for similarity-based recommendations.</p>
+                </div>
+                </div>
+
+                <div class="col-md-6">
+                <div class="feature-item" data-aos="fade-up" data-aos-delay="600">
+                  <i class="bi bi-database"></i>
+                  <h4>Efficient Data Processing</h4>
+                  <p>Handles large datasets efficiently for quick and relevant recommendations.</p>
+                </div>
+                </div>
+
+                <div class="col-md-6">
+                <div class="feature-item" data-aos="fade-up" data-aos-delay="700">
+                  <i class="bi bi-arrow-repeat"></i>
+                  <h4>Extensible Design</h4>
+                  <p>Can be improved with more data sources or user feedback for better accuracy.</p>
+                </div>
+                </div>
+              </div>
               </div>
             </div>
           </div>

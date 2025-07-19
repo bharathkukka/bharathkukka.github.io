@@ -26,7 +26,15 @@
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
-  
+  <style>
+    .portfolio-details-slider .swiper-slide img {
+      width: 100%;
+      height: 400px;
+      object-fit: contain;
+      background: #222;
+      display: block;
+    }
+  </style>
 </head>
 
 <body class="portfolio-details-page">
@@ -97,7 +105,7 @@
                   "loop": true,
                   "speed": 600,
                   "autoplay": {
-                    "delay": 5000
+                    "delay": 3000
                   },
                   "slidesPerView": "auto",
                   "pagination": {
@@ -110,13 +118,16 @@
 
               <div class="swiper-wrapper align-items-center">
                 <div class="swiper-slide">
-                  <img src="assets/img/portfolio/portfolio-portrait-2.webp" alt="4-Axis Manipulator Image 1" class="img-fluid" loading="lazy">
+                  <img src="assets/img/portfolio/FAM/4AM.jpeg" alt="4-Axis Manipulator Image 1" class="img-fluid" loading="lazy">
                 </div>
                 <div class="swiper-slide">
-                  <img src="assets/img/portfolio/portfolio-5.webp" alt="4-Axis Manipulator Image 2" class="img-fluid" loading="lazy">
+                  <img src="assets/img/portfolio/FAM/GUI.png" alt="4-Axis Manipulator Image 2" class="img-fluid" loading="lazy">
                 </div>
                 <div class="swiper-slide">
-                  <img src="assets/img/portfolio/portfolio-6.webp" alt="4-Axis Manipulator Image 3" class="img-fluid" loading="lazy">
+                  <img src="assets/img/portfolio/FAM/FA2.png" alt="4-Axis Manipulator Image 3" class="img-fluid" loading="lazy">
+                </div>
+                <div class="swiper-slide">
+                  <img src="assets/img/portfolio/FAM/workspace.png" alt="4-Axis Manipulator Image 3" class="img-fluid" loading="lazy">
                 </div>
               </div>
               <div class="swiper-pagination"></div>
@@ -128,58 +139,64 @@
               <h3>Project Information</h3>
               <ul>
                 <li><strong>Category</strong>: Robotics</li>
-                <li><strong>Client</strong>: Automation Solutions Co.</li>
-                <li><strong>Project date</strong>: April 01, 2024</li>
-                <li><strong>Project URL</strong>: <a href="https://www.4axis-robot.com" target="_blank">www.4axis-robot.com</a></li>
+                <li><strong>Project Title</strong>: 4-Axis Manipulator</li>
+                <li><strong>Project date</strong>: July 2024 - Dec 2024</li>
+                <li><strong>Project URL</strong>: <a href="https://github.com/bhaarath22/4AxisManipulator" target="_blank">GitHub Repo</a></li>
               </ul>
             </div>
           </div>
 
           <div class="col-lg-12">
             <div class="portfolio-description" data-aos="fade-up" data-aos-delay="300">
-              <h2>4-Axis Manipulator: Automated Handling</h2>
+              <h2>4-Axis Manipulator: Automated Handling & Control</h2>
               <p>
-                The 4-axis robotic manipulator project focuses on developing a versatile system for automated pick-and-place, assembly, and inspection tasks. Its design prioritizes speed and repeatability, making it suitable for fast-paced manufacturing environments.
+              The 4-Axis Manipulator project automates pick-and-place, assembly, and inspection tasks, prioritizing speed, precision, and reliability. Built for manufacturing environments, it ensures consistent, repeatable performance.
               </p>
               <p>
-                Key aspects of this project include optimizing motor control for swift movements, implementing straightforward kinematic solutions, and integrating robust safety protocols. Its simpler design compared to 6-axis systems allows for quicker deployment and cost-effectiveness in specific industrial applications.
+              A custom Python GUI provides intuitive control, featuring joint sliders, movement buttons, and a home/reset function. The GUI communicates with an Arduino microcontroller via serial protocol for real-time command execution and motor control.
+              </p>
+              <p>
+              Gesture recording allows users to capture and replay joint movement sequences for automated workflows. The project combines kinematic modeling, MATLAB simulation, CAD-based design, and user-friendly software for a robust automation solution.
+              </p>
+              <p>
+              This manipulator is a foundation for future upgrades, including a 6-axis version with inverse kinematics, advanced automation, and machine vision.
               </p>
 
               <div class="features mt-4">
-                <h3>Key Features</h3>
-                <div class="row gy-3">
-                  <div class="col-md-6">
-                    <div class="feature-item" data-aos="fade-up" data-aos-delay="400">
-                      <i class="bi bi-arrow-repeat"></i>
-                      <h4>High Repeatability</h4>
-                      <p>Ensures consistent and accurate task execution over many cycles.</p>
-                    </div>
-                  </div>
-
-                  <div class="col-md-6">
-                    <div class="feature-item" data-aos="fade-up" data-aos-delay="500">
-                      <i class="bi bi-lightning-charge"></i>
-                      <h4>Optimized Speed</h4>
-                      <p>Designed for rapid movements to enhance production throughput.</p>
-                    </div>
-                  </div>
-
-                  <div class="col-md-6">
-                    <div class="feature-item" data-aos="fade-up" data-aos-delay="600">
-                      <i class="bi bi-hand-index"></i>
-                      <h4>Pick & Place Specialization</h4>
-                      <p>Optimized for efficient and reliable handling of various components.</p>
-                    </div>
-                  </div>
-
-                  <div class="col-md-6">
-                    <div class="feature-item" data-aos="fade-up" data-aos-delay="700">
-                      <i class="bi bi-sliders"></i>
-                      <h4>User-Friendly Control</h4>
-                      <p>Intuitive programming interface for easy task setup and modification.</p>
-                    </div>
-                  </div>
+              <h3>Main Features</h3>
+              <div class="row gy-3">
+                <div class="col-md-6">
+                <div class="feature-item" data-aos="fade-up" data-aos-delay="400">
+                  <i class="bi bi-arrow-repeat"></i>
+                  <h4>Consistent Repeatability</h4>
+                  <p>Delivers accurate, repeatable task execution across cycles.</p>
                 </div>
+                </div>
+
+                <div class="col-md-6">
+                <div class="feature-item" data-aos="fade-up" data-aos-delay="500">
+                  <i class="bi bi-lightning-charge"></i>
+                  <h4>Fast Operation</h4>
+                  <p>Engineered for rapid movement to boost productivity.</p>
+                </div>
+                </div>
+
+                <div class="col-md-6">
+                <div class="feature-item" data-aos="fade-up" data-aos-delay="600">
+                  <i class="bi bi-hand-index"></i>
+                  <h4>Pick & Place Focus</h4>
+                  <p>Specialized for efficient, reliable component handling.</p>
+                </div>
+                </div>
+
+                <div class="col-md-6">
+                <div class="feature-item" data-aos="fade-up" data-aos-delay="700">
+                  <i class="bi bi-sliders"></i>
+                  <h4>Easy-to-Use Interface</h4>
+                  <p>Simple programming and control for quick setup and changes.</p>
+                </div>
+                </div>
+              </div>
               </div>
             </div>
           </div>

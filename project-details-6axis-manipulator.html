@@ -26,7 +26,15 @@
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
-  
+  <style>
+    .portfolio-details-slider .swiper-slide img {
+      width: 100%;
+      height: 400px;
+      object-fit: contain;
+      background: #222;
+      display: block;
+    }
+  </style>
 </head>
 
 <body class="portfolio-details-page">
@@ -115,7 +123,7 @@
                   "loop": true,
                   "speed": 600,
                   "autoplay": {
-                    "delay": 5000
+                    "delay": 3000
                   },
                   "slidesPerView": "auto",
                   "pagination": {
@@ -128,13 +136,19 @@
 
               <div class="swiper-wrapper align-items-center">
                 <div class="swiper-slide">
-                  <img src="assets/img/portfolio/portfolio-portrait-1.webp" alt="6-Axis Manipulator Image 1" class="img-fluid" loading="lazy">
+                  <img src="assets/img/portfolio/SAM/RTB-Visualization.png" alt="6-Axis Manipulator Image 1" class="img-fluid" loading="lazy">
                 </div>
                 <div class="swiper-slide">
-                  <img src="assets/img/portfolio/portfolio-10.webp" alt="6-Axis Manipulator Image 2" class="img-fluid" loading="lazy">
+                  <img src="assets/img/portfolio/SAM/FA-Matlab-Final.png" alt="6-Axis Manipulator FK" class="img-fluid" loading="lazy">
                 </div>
                 <div class="swiper-slide">
-                  <img src="assets/img/portfolio/portfolio-7.webp" alt="6-Axis Manipulator Image 3" class="img-fluid" loading="lazy">
+                  <img src="assets/img/portfolio/SAM/RTB-visualizationTeach.png" alt="6-Axis Manipulator RTB-Visualization" class="img-fluid" loading="lazy">
+                </div>
+                <div class="swiper-slide">
+                  <img src="assets/img/portfolio/SAM/Frame arrangement 2.jpeg" alt="6-Axis Manipulator Frame Arrangement" class="img-fluid" loading="lazy">
+                </div>
+                <div class="swiper-slide">
+                  <img src="assets/img/portfolio/SAM/Rworkspace.png" alt="6-Axis Manipulator workspace" class="img-fluid" loading="lazy">
                 </div>
               </div>
               <div class="swiper-pagination"></div>
@@ -146,58 +160,60 @@
               <h3>Project Information</h3>
               <ul>
                 <li><strong>Category</strong>: Robotics</li>
-                <li><strong>Client</strong>: Acme Robotics Inc.</li>
-                <li><strong>Project date</strong>: July 01, 2024</li>
-                <li><strong>Project URL</strong>: <a href="https://www.robotics-6axis.com" target="_blank">www.robotics-6axis.com</a></li>
+                <li><strong>Project date</strong>: Feb 2025 - Present</li>
+                <li><strong>Project URL</strong>: <a href="https://github.com/bhaarath22/6AxisManipulator" target="_blank">GitHub Repo</a></li>
               </ul>
             </div>
           </div>
 
           <div class="col-lg-12">
             <div class="portfolio-description" data-aos="fade-up" data-aos-delay="300">
-              <h2>6-Axis Manipulator: Precision Robotics</h2>
+              <h2>6-Axis Manipulator: Academic Project Overview</h2>
               <p>
-                This project involves the design, simulation, and control of a 6-axis robotic manipulator, engineered for high-precision tasks in industrial automation. The manipulator leverages advanced kinematics and dynamic control algorithms to achieve smooth and accurate movements, making it ideal for assembly, welding, and material handling applications.
+              This project was developed as part of my academic coursework to explore the fundamentals of robotics, specifically focusing on the modeling and simulation of a 6-axis robotic manipulator. The main objective was to understand kinematic chains, workspace analysis, and basic control strategies using MATLAB and the Robotics Toolbox.
               </p>
               <p>
-                Our focus was on developing robust control strategies, including inverse kinematics for precise trajectory planning and real-time feedback systems to minimize errors and ensure operational stability. The modular design also facilitates easy maintenance and scalability.
+              Through this project, I gained hands-on experience in defining Denavit-Hartenberg (DH) parameters, performing forward and inverse kinematics, and visualizing robot motion. The work also included basic trajectory planning and workspace visualization, providing a strong foundation in robotics concepts.
+              </p>
+              <p>
+              The project was implemented using MATLAB, leveraging the Robotics Toolbox for simulation and analysis. This academic exercise helped reinforce theoretical knowledge with practical application, preparing me for more advanced robotics projects in the future.
               </p>
 
               <div class="features mt-4">
-                <h3>Key Features</h3>
-                <div class="row gy-3">
-                  <div class="col-md-6">
-                    <div class="feature-item" data-aos="fade-up" data-aos-delay="400">
-                      <i class="bi bi-check-circle-fill"></i>
-                      <h4>High Precision Control</h4>
-                      <p>Achieves sub-millimeter accuracy for delicate and intricate manipulation tasks.</p>
-                    </div>
-                  </div>
-
-                  <div class="col-md-6">
-                    <div class="feature-item" data-aos="fade-up" data-aos-delay="500">
-                      <i class="bi bi-lightbulb"></i>
-                      <h4>Advanced Inverse Kinematics</h4>
-                      <p>Sophisticated algorithms enable precise end-effector positioning and orientation, simplifying programming.</p>
-                    </div>
-                  </div>
-
-                  <div class="col-md-6">
-                    <div class="feature-item" data-aos="fade-up" data-aos-delay="600">
-                      <i class="bi bi-tools"></i>
-                      <h4>Modular and Maintainable Design</h4>
-                      <p>Components are designed for easy replacement and upgrades, ensuring long-term operational efficiency.</p>
-                    </div>
-                  </div>
-
-                  <div class="col-md-6">
-                    <div class="feature-item" data-aos="fade-up" data-aos-delay="700">
-                      <i class="bi bi-speedometer2"></i>
-                      <h4>Real-time Control System</h4>
-                      <p>Integrated sensors and feedback loops provide dynamic adjustments for optimal performance.</p>
-                    </div>
-                  </div>
+              <h3>Project Highlights</h3>
+              <div class="row gy-3">
+                <div class="col-md-6">
+                <div class="feature-item" data-aos="fade-up" data-aos-delay="400">
+                  <i class="bi bi-gear"></i>
+                  <h4>Kinematic Modeling</h4>
+                  <p>Defined DH parameters and constructed the manipulator's kinematic chain for simulation.</p>
                 </div>
+                </div>
+
+                <div class="col-md-6">
+                <div class="feature-item" data-aos="fade-up" data-aos-delay="500">
+                  <i class="bi bi-diagram-3"></i>
+                  <h4>Forward & Inverse Kinematics</h4>
+                  <p>Implemented algorithms to calculate end-effector positions and joint angles.</p>
+                </div>
+                </div>
+
+                <div class="col-md-6">
+                <div class="feature-item" data-aos="fade-up" data-aos-delay="600">
+                  <i class="bi bi-bar-chart"></i>
+                  <h4>Workspace Analysis</h4>
+                  <p>Visualized the reachable workspace of the manipulator using MATLAB plotting tools.</p>
+                </div>
+                </div>
+
+                <div class="col-md-6">
+                <div class="feature-item" data-aos="fade-up" data-aos-delay="700">
+                  <i class="bi bi-laptop"></i>
+                  <h4>Simulation Practice</h4>
+                  <p>Simulated robot motion and basic trajectory planning in a virtual environment.</p>
+                </div>
+                </div>
+              </div>
               </div>
             </div>
           </div>

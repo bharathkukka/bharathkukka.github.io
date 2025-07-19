@@ -26,7 +26,15 @@
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
-  
+  <style>
+    .portfolio-details-slider .swiper-slide img {
+      width: 100%;
+      height: 400px;
+      object-fit: contain;
+      background: #222;
+      display: block;
+    }
+  </style>
 </head>
 
 <body class="portfolio-details-page">
@@ -99,26 +107,38 @@
                   "loop": true,
                   "speed": 600,
                   "autoplay": {
-                    "delay": 5000
+                    "delay": 3000,
+                    "disableOnInteraction": false,
+                    "pauseOnMouseEnter": true
                   },
                   "slidesPerView": "auto",
                   "pagination": {
                     "el": ".swiper-pagination",
                     "type": "bullets",
                     "clickable": true
+                  },
+                  "on": {
+                    "slideChangeTransitionStart": "function(swiper) { var videos = swiper.el.querySelectorAll('video'); videos.forEach(function(video) { video.pause(); video.currentTime = 0; }); var activeSlide = swiper.slides[swiper.activeIndex]; var video = activeSlide.querySelector('video'); if(video) { video.play(); swiper.autoplay.stop(); video.onended = function() { swiper.autoplay.start(); }; } else { swiper.autoplay.start(); } }",
+                    "slideChangeTransitionEnd": "function(swiper) { var activeSlide = swiper.slides[swiper.activeIndex]; var video = activeSlide.querySelector('video'); if(!video && swiper.autoplay && !swiper.autoplay.running) { swiper.autoplay.start(); } }"
                   }
                 }
               </script>
 
               <div class="swiper-wrapper align-items-center">
                 <div class="swiper-slide">
-                  <img src="assets/img/portfolio/portfolio-6.webp" alt="Prosthetic Hand Image 1" class="img-fluid" loading="lazy">
+                  <img src="assets/img/portfolio/Basic/QP.png" alt="Prosthetic Hand Image 1" class="img-fluid" loading="lazy">
                 </div>
                 <div class="swiper-slide">
-                  <img src="assets/img/portfolio/portfolio-portrait-2.webp" alt="Prosthetic Hand Image 2" class="img-fluid" loading="lazy">
+                  <video controls style="width:100%;height:400px;object-fit:contain;background:#222;display:block;">
+                  <source src="assets/img/portfolio/Basic/QPRW.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                  </video>
                 </div>
                 <div class="swiper-slide">
-                  <img src="assets/img/portfolio/portfolio-portrait-1.webp" alt="Prosthetic Hand Image 3" class="img-fluid" loading="lazy">
+                  <img src="assets/img/portfolio/Basic/DBCV1.jpeg" alt="Prosthetic Hand Image 2" class="img-fluid" loading="lazy">
+                </div>
+                <div class="swiper-slide">
+                  <img src="assets/img/portfolio/Basic/assembling.jpeg" alt="Prosthetic Hand Image 3" class="img-fluid" loading="lazy">
                 </div>
               </div>
               <div class="swiper-pagination"></div>
@@ -130,9 +150,8 @@
               <h3>Project Information</h3>
               <ul>
                 <li><strong>Category</strong>: Basics</li>
-                <li><strong>Client</strong>: Bio-Assist Innovations</li>
-                <li><strong>Project date</strong>: Jan 05, 2024</li>
-                <li><strong>Project URL</strong>: <a href="https://www.basic-prosthetics.org" target="_blank">www.basic-prosthetics.org</a></li>
+                <li><strong>Project date</strong>: July 2022 - April 2023</li>
+                <li><strong>Project URL</strong>: <a href="https://github.com/bhaarath22/Mini-RoboticProjects" target="_blank">GitHub repo</a></li>
               </ul>
             </div>
           </div>
@@ -141,48 +160,51 @@
             <div class="portfolio-description" data-aos="fade-up" data-aos-delay="300">
               <h2>Prosthetic Hand: Basic Functional Design</h2>
               <p>
-                This project explores the fundamental principles behind designing and constructing a functional prosthetic hand. Focusing on cost-effectiveness and basic utility, it demonstrates core mechanical and control concepts essential for assistive devices.
+                <strong>Prosthetic Hand Project (July 2022 – Dec 2022):</strong> Developed a prosthetic hand to assist individuals with physical disabilities, focusing on integrating microcontrollers, EMG muscle sensors, and servo motors to replicate human hand movements. The project involved using an Arduino Nano, EMG Muscle Sensor V3.0, five TowerPro MG996R servo motors, and a 3D-printed hand. Through programming in Embedded C on the Arduino IDE, I learned to interpret EMG signals for real-time motion control, gaining hands-on experience in sensor interfacing, actuator control, and biomedical signal integration in robotics.
               </p>
               <p>
-                The design emphasizes simple actuators and intuitive control mechanisms, aiming to provide a practical solution for grasping and manipulating everyday objects. This serves as a foundational project for understanding biomechanics and accessible technology.
+                <strong>Quadruped Robot Project (July 2023 – May 2023):</strong> Designed and built a four-legged quadruped robot, implementing both forward and inverse kinematics for movement and stability. The robot was assembled using 3D-printed parts, twelve servo motors (three per leg), and an Arduino Nano, with motion planning algorithms developed in Python. This project deepened my understanding of robotic kinematics, workspace analysis, and trajectory generation, while also exploring future enhancements such as IMU-based dynamic balance and adaptive machine learning for locomotion.
+              </p>
+              <p>
+                <strong>Dustbin Collector Vehicle (Jan 2023 – April 2023):</strong> Created a four-wheeled rover equipped with a two-axis robotic manipulator and a magnetic docking system for collecting and dumping dustbins. The system used an Arduino Uno, three servo motors for the manipulator, four DC motors for mobility, and joystick modules for intuitive control. This project enhanced my skills in real-time analog input processing, integration of mobile and manipulator systems, and efficient microcontroller I/O management, resulting in a semi-autonomous mobile manipulator capable of real-world tasks.
               </p>
 
-              <div class="features mt-4">
+                <div class="features mt-4">
                 <h3>Key Features</h3>
                 <div class="row gy-3">
                   <div class="col-md-6">
-                    <div class="feature-item" data-aos="fade-up" data-aos-delay="400">
-                      <i class="bi bi-hand-index-thumb"></i>
-                      <h4>Functional Grasping</h4>
-                      <p>Enables basic pick-up and manipulation of objects.</p>
-                    </div>
+                  <div class="feature-item" data-aos="fade-up" data-aos-delay="400">
+                    <i class="bi bi-cpu"></i>
+                    <h4>EMG-Based Control</h4>
+                    <p>Utilizes EMG muscle sensors for intuitive, real-time hand movement replication.</p>
+                  </div>
                   </div>
 
                   <div class="col-md-6">
-                    <div class="feature-item" data-aos="fade-up" data-aos-delay="500">
-                      <i class="bi bi-gear-wide-connected"></i>
-                      <h4>Simplified Mechanical Design</h4>
-                      <p>Uses straightforward mechanisms for robustness and ease of construction.</p>
-                    </div>
+                  <div class="feature-item" data-aos="fade-up" data-aos-delay="500">
+                    <i class="bi bi-robot"></i>
+                    <h4>3D-Printed & Modular Design</h4>
+                    <p>Custom 3D-printed parts for prosthetic hand and quadruped robot, enabling easy assembly and modification.</p>
+                  </div>
                   </div>
 
                   <div class="col-md-6">
-                    <div class="feature-item" data-aos="fade-up" data-aos-delay="600">
-                      <i class="bi bi-plug"></i>
-                      <h4>Intuitive Control Interface</h4>
-                      <p>Designed for ease of use by the wearer.</p>
-                    </div>
+                  <div class="feature-item" data-aos="fade-up" data-aos-delay="600">
+                    <i class="bi bi-diagram-3"></i>
+                    <h4>Kinematics & Motion Planning</h4>
+                    <p>Implements forward/inverse kinematics and trajectory generation for robotic movement and stability.</p>
+                  </div>
                   </div>
 
                   <div class="col-md-6">
-                    <div class="feature-item" data-aos="fade-up" data-aos-delay="700">
-                      <i class="bi bi-wallet2"></i>
-                      <h4>Cost-Effective Construction</h4>
-                      <p>Utilizes readily available and affordable materials.</p>
-                    </div>
+                  <div class="feature-item" data-aos="fade-up" data-aos-delay="700">
+                    <i class="bi bi-trash2"></i>
+                    <h4>Robotic Manipulation & Mobility</h4>
+                    <p>Combines mobile platforms with robotic arms for tasks like dustbin collection and object handling.</p>
+                  </div>
                   </div>
                 </div>
-              </div>
+                </div>
             </div>
           </div>
 

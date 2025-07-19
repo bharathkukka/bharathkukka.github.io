@@ -26,7 +26,15 @@
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
-  
+  <style>
+    .portfolio-details-slider .swiper-slide img {
+      width: 100%;
+      height: 400px;
+      object-fit: contain;
+     background: #222;
+      display: block;
+    }
+  </style>
 </head>
 
 <body class="portfolio-details-page">
@@ -98,7 +106,7 @@
                   "loop": true,
                   "speed": 600,
                   "autoplay": {
-                    "delay": 5000
+                    "delay": 3000
                   },
                   "slidesPerView": "auto",
                   "pagination": {
@@ -111,13 +119,22 @@
 
               <div class="swiper-wrapper align-items-center">
                 <div class="swiper-slide">
-                  <img src="assets/img/portfolio/portfolio-2.webp" alt="Emotion Recognition Image 1" class="img-fluid" loading="lazy">
+                  <img src="assets/img/portfolio/ERS/GUI.png" alt="Emotion Recognition Image 1" class="img-fluid" loading="lazy">
                 </div>
                 <div class="swiper-slide">
-                  <img src="assets/img/portfolio/portfolio-9.webp" alt="Emotion Recognition Image 2" class="img-fluid" loading="lazy">
+                  <img src="assets/img/portfolio/ERS/Confusionmatrix.png" alt="Emotion Recognition Image 2" class="img-fluid" loading="lazy">
                 </div>
                 <div class="swiper-slide">
-                  <img src="assets/img/portfolio/portfolio-8.webp" alt="Emotion Recognition Image 3" class="img-fluid" loading="lazy">
+                  <img src="assets/img/portfolio/ERS/Presult.png" alt="Emotion Recognition Image 3" class="img-fluid" loading="lazy">
+                </div>
+                                <div class="swiper-slide">
+                  <img src="assets/img/portfolio/ERS/Confusion.png" alt="Emotion Recognition Image 1" class="img-fluid" loading="lazy">
+                </div>
+                <div class="swiper-slide">
+                  <img src="assets/img/portfolio/ERS/Training.png" alt="Emotion Recognition Image 2" class="img-fluid" loading="lazy">
+                </div>
+                <div class="swiper-slide">
+                  <img src="assets/img/portfolio/ERS/A&C.png" alt="Emotion Recognition Image 3" class="img-fluid" loading="lazy">
                 </div>
               </div>
               <div class="swiper-pagination"></div>
@@ -129,9 +146,8 @@
               <h3>Project Information</h3>
               <ul>
                 <li><strong>Category</strong>: Deep-Learning</li>
-                <li><strong>Client</strong>: Vision AI Solutions</li>
-                <li><strong>Project date</strong>: May 15, 2024</li>
-                <li><strong>Project URL</strong>: <a href="https://www.emotions.ai" target="_blank">www.emotions.ai</a></li>
+                <li><strong>Project date</strong>: Sep 2024 - Present</li>
+                <li><strong>Project URL</strong>: <a href="https://github.com/bhaarath22/Emotion-RecognitionSystem" target="_blank">GitHub Repo</a></li>
               </ul>
             </div>
           </div>
@@ -140,10 +156,13 @@
             <div class="portfolio-description" data-aos="fade-up" data-aos-delay="300">
               <h2>Emotion-Recognition System: AI for Understanding</h2>
               <p>
-                This project details the development of an AI-powered system capable of real-time emotion recognition from facial expressions. Utilizing deep learning techniques, the system processes live video feeds to accurately identify human emotions such as happiness, sadness, anger, and surprise.
+                The Emotion Recognition System is an advanced AI solution designed to classify human emotions—such as happiness, sadness, anger, and surprise—using Deep Learning, primarily through Convolutional Neural Networks (CNNs). Developed from the ground up, the project involved building and optimizing multiple models with techniques like data augmentation, transfer learning, and iterative training for improved accuracy.
               </p>
               <p>
-                The system's core is built upon Convolutional Neural Networks (CNNs) trained on extensive datasets, ensuring high accuracy and robustness across various lighting conditions and facial orientations. Potential applications include human-computer interaction, mental health monitoring, and customer service analytics.
+                The system features a user-friendly graphical interface that enables both real-time emotion detection via webcam and static image analysis through uploads. A distinctive aspect is its ability to provide contextual, motivational, and philosophical responses inspired by ancient Hindu scriptures—including the Vedas, Ramayana, Mahabharata, and Bhagavad Gita—tailored to the detected emotion.
+              </p>
+              <p>
+                Built on robust CNN architectures and trained on diverse datasets, the system delivers reliable emotion classification across various conditions. Its applications span human-computer interaction, mental health monitoring, and customer service analytics.
               </p>
 
               <div class="features mt-4">
