@@ -697,8 +697,8 @@ for robotics, looking to contribute in autonomous systems and intelligent automa
   <section id="services" class="services section">
 
   <div class="container section-title" data-aos="fade-up">
-    <h2>Achievements</h2>
-    <p>Here are my Certifications</p>
+    <h2>Achievements & Certifications</h2>
+    <p></p>
   </div>
   <div class="container" data-aos="fade-up" data-aos-delay="100">
 
@@ -715,63 +715,87 @@ for robotics, looking to contribute in autonomous systems and intelligent automa
 
     <div class="row justify-content-center">
       <div class="col-lg-4 col-md-6 mb-4 d-flex align-items-stretch">
-        <a href="#" class="service-card position-relative z-1 w-100 d-flex flex-column"
-           data-bs-toggle="modal" data-bs-target="#certificateModal" data-certificate-src="assets/img/cert1.jpg">
-          <div class="service-icon">
-            <i class="bi bi-award"></i>
-          </div>
-          <h3>Certification <span>Title One</span></h3>
-          <p>
-            Brief description of Certification One. Mention key skills or areas covered. This text should be concise and informative.
-          </p>
-          </a>
+      <a href="#" class="service-card position-relative z-1 w-100 d-flex flex-column"
+         data-bs-toggle="modal" data-bs-target="#certificateModal" data-certificate-src="assets/img/Certificates/DeansList.png">
+        <div class="service-icon">
+        <i class="bi bi-award"></i>
+        </div>
+        <h3>Certification <span>Dean's List</span></h3>
+        <p>
+        Awarded for outstanding academic performance and inclusion in the Dean's List at Manav Rachna University.
+        </p>
+        <img src="assets/img/Certificates/DeansList.png" alt="Dean's List Certificate" class="img-fluid mt-2 rounded shadow-sm" style="max-height: 180px; object-fit: contain;">
+      </a>
       </div>
 
-      <div class="col-lg-4 col-md-6 mb-4 d-flex align-items-stretch">
-        <a href="#" class="service-card position-relative z-1 w-100 d-flex flex-column"
-           data-bs-toggle="modal" data-bs-target="#certificateModal" data-certificate-src="assets/img/cert2.jpg">
-          <div class="service-icon">
-            <i class="bi bi-award-fill"></i>
-          </div>
-          <h3>Certification <span>Title Two</span></h3>
-          <p>
-            Brief description of Certification Two. Highlight specific achievements or the issuing body.
-          </p>
-        </a>
-      </div>
+      <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        var certificateModal = document.getElementById('certificateModal');
+        var modalImg = document.getElementById('modalCertificateImage');
+        var serviceCards = document.querySelectorAll('.service-card[data-certificate-src]');
+
+        serviceCards.forEach(function(card) {
+        card.addEventListener('click', function(e) {
+          var src = card.getAttribute('data-certificate-src');
+          if (src && modalImg) {
+          modalImg.src = src;
+          }
+        });
+        });
+
+        // Optional: Clear image when modal is closed
+        certificateModal.addEventListener('hidden.bs.modal', function () {
+        if (modalImg) modalImg.src = '';
+        });
+      });
+      </script>
 
       <div class="col-lg-4 col-md-6 mb-4 d-flex align-items-stretch">
-        <a href="#" class="service-card position-relative z-1 w-100 d-flex flex-column"
-           data-bs-toggle="modal" data-bs-target="#certificateModal" data-certificate-src="assets/img/cert3.jpg">
-          <div class="service-icon">
-            <i class="bi bi-file-earmark-check"></i>
-          </div>
-          <h3>Certification <span>Title Three</span></h3>
-          <p>
-            Brief description of Certification Three. Explain its relevance to your skills or career.
-          </p>
-        </a>
+      <a href="#" class="service-card position-relative z-1 w-100 d-flex flex-column"
+         data-bs-toggle="modal" data-bs-target="#certificateModal" data-certificate-src="assets/img/Certificates/Nptel.png">
+        <div class="service-icon">
+        <i class="bi bi-award"></i>
+        </div>
+        <h3>Certification <span>NPTEL Robotics & Control</span></h3>
+        <p>
+        Successfully completed the NPTEL Robotics and Control course. Covered kinematics, dynamics, and control of robotic systems with hands-on assignments and final exam.
+        </p>
+        <img src="assets/img/Certificates/Nptel.png" alt="NPTEL Robotics Certificate" class="img-fluid mt-2 rounded shadow-sm" style="max-height: 180px; object-fit: contain;">
+      </a>
       </div>
+
+      <!-- <div class="col-lg-4 col-md-6 mb-4 d-flex align-items-stretch">
+      <a href="#" class="service-card position-relative z-1 w-100 d-flex flex-column"
+         data-bs-toggle="modal" data-bs-target="#certificateModal" data-certificate-src="assets/img/Certificates/Java_Certificate.png">
+        <div class="service-icon">
+        <i class="bi bi-award"></i>
+        </div>
+        <h3>Certification <span>Java Programming</span></h3>
+        <p>
+        Earned certification in Java Programming. Demonstrated proficiency in object-oriented programming, data structures, and application development.
+        </p>
+        <img src="assets/img/Certificates/Java_Certificate.png" alt="Java Programming Certificate" class="img-fluid mt-2 rounded shadow-sm" style="max-height: 180px; object-fit: contain;">
+      </a>
+      </div> -->
+    </div>
 
     </div>
 
-  </div>
+  </section>
 
-</section>
-
-<div class="modal fade" id="certificateModal" tabindex="-1" aria-labelledby="certificateModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered modal-xl">
+  <div class="modal fade" id="certificateModal" tabindex="-1" aria-labelledby="certificateModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-xl">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="certificateModalLabel">View Certificate</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      <h5 class="modal-title" id="certificateModalLabel">View Certificate</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body text-center">
-        <img src="" id="modalCertificateImage" class="img-fluid" alt="Certificate Image">
+      <img src="" id="modalCertificateImage" class="img-fluid" alt="Certificate Image">
       </div>
     </div>
-  </div>
-</div><!-- /Services Section -->
+    </div>
+  </div><!-- /Services Section -->
 
     <!-- Testimonials Section -->
      
@@ -829,41 +853,41 @@ for robotics, looking to contribute in autonomous systems and intelligent automa
           </div>
 
           <div class="col-lg-7">
-            <div class="contact-form">
-              <h3>Get In Touch</h3>
-              <p>I'm a student developer currently looking for projects, internships, and entry-level opportunities. Feel free to reach out — I'd love to connect and collaborate!.</p>
+            <div class="contact-form not-working">
+  <h3>Get In Touch</h3>
+  <p>I'm a student developer currently looking for projects, internships, and entry-level opportunities. Feel free to reach out — I'd love to connect and collaborate!.</p>
 
-              <form action="forms/contact.php" method="post" class="php-email-form">
-                <div class="row gy-4">
+  <form action="forms/contact.php" method="post" class="php-email-form">
+    <div class="row gy-4">
 
-                  <div class="col-md-6">
-                    <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
-                  </div>
+      <div class="col-md-6">
+        <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
+      </div>
 
-                  <div class="col-md-6 ">
-                    <input type="email" class="form-control" name="email" placeholder="Your Email" required="">
-                  </div>
+      <div class="col-md-6 ">
+        <input type="email" class="form-control" name="email" placeholder="Your Email" required="">
+      </div>
 
-                  <div class="col-12">
-                    <input type="text" class="form-control" name="subject" placeholder="Subject" required="">
-                  </div>
+      <div class="col-12">
+        <input type="text" class="form-control" name="subject" placeholder="Subject" required="">
+      </div>
 
-                  <div class="col-12">
-                    <textarea class="form-control" name="message" rows="6" placeholder="Message" required=""></textarea>
-                  </div>
+      <div class="col-12">
+        <textarea class="form-control" name="message" rows="6" placeholder="Message" required=""></textarea>
+      </div>
 
-                  <div class="col-12 text-center">
-                    <div class="loading">Loading</div>
-                    <div class="error-message"></div>
-                    <div class="sent-message">Your message has been sent. Thank you!</div>
+      <div class="col-12 text-center">
+        <div class="loading">Loading</div>
+        <div class="error-message"></div>
+        <div class="sent-message">Your message has been sent. Thank you!</div>
 
-                    <button type="submit" class="btn">Send Message</button>
-                  </div>
+        <button type="submit" class="btn">Send Message</button>
+      </div>
 
-                </div>
-              </form>
+    </div>
+  </form>
 
-            </div>
+</div>
           </div>
 
         </div>
