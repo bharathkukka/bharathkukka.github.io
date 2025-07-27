@@ -145,35 +145,6 @@ Your empty repository is now ready for customization! 📂
 - **`style.css`** (or `/css/style.css`) → Design and layout styles
 - **`/img`** or **`/assets`** → Replace with your images
 
-#### **Essential Sections to Personalize:**
-
-**✍️ About Me Section:**
-```html
-Your Name
-Brief description of who you are and what you do
-```
-
-**🛠️ Projects Section:**
-- Add your actual projects
-- Include project descriptions
-- Link to live demos or GitHub repositories
-
-**📚 Skills Section:**
-- List your technical skills
-- Programming languages you know
-- Tools and technologies you use
-
-**📫 Contact Section:**
-- Your professional email
-- LinkedIn profile link
-- GitHub profile link
-- Other relevant social media
-
-### 🖼️ Image Updates:
-- Replace profile photo with your professional headshot
-- Add screenshots of your projects
-- Update any placeholder images
-- **Tip:** Keep original file names to avoid breaking links
 
 ## 🧪 Test the Website Locally
 
@@ -287,24 +258,6 @@ Updating your portfolio is simple:
 
 ```
 
-**📷 Optimize Images:**
-- Compress images using [TinyPNG](https://tinypng.com/) for faster loading
-- Use appropriate image formats (WebP, PNG, JPG)
-- Optimize image dimensions for web use
-
-## 🙌 Credits
-
-### Template Attribution:
-Remember to give credit to your template source:
-
-- **Template originally from:** [BootstrapMade](https://bootstrapmade.com/)
-- **Icons by:** [Font Awesome](https://fontawesome.com/) or [Bootstrap Icons](https://icons.getbootstrap.com/)
-- **Fonts from:** [Google Fonts](https://fonts.google.com/)
-
-### 📄 License Information:
-- Check your template's license file
-- Most free templates require attribution
-- Include proper credits in your website footer
 
 ## 📬 Need Help?
 
@@ -315,8 +268,3 @@ Remember to give credit to your template source:
 - **HTML/CSS Help:** [W3Schools](https://www.w3schools.com/) or [MDN Web Docs](https://developer.mozilla.org/)
 - **Bootstrap Help:** [Bootstrap Documentation](https://getbootstrap.com/docs/)
 
-Feel free to open an issue in this repository or reach out through the contact section of the portfolio!
-
-**Happy building! 💻🚀✨**
-
-*Last updated: July 2025*
