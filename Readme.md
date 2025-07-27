@@ -4,9 +4,10 @@
 
 Welcome to the repository for my personal portfolio website! This project was a fantastic learning experience, starting with a free, responsive Bootstrap template and transforming it into a unique site that showcases my skills, projects, and professional journey.
 
-[➡️ Live Demo:](bhaarath22.github.io)
+[➡️ Live Demo:](https://bhaarath22.github.io)
 
-Think of this repository not just as code, but as a **blueprint**. I've written this guide to walk you through how I built it, and more importantly, how you can easily create and deploy your very own version. Let's get started! 🚀
+Think of this repository not just as code, but as a **blueprint**. I've written this guide to walk you through how I built it, and more importantly, how you can easily create and deploy your very own version. Let's get started! 🚀  
+
 
 ## 📌 Table of Contents
 
@@ -22,6 +23,7 @@ Think of this repository not just as code, but as a **blueprint**. I've written 
 10. [🔄 Keeping the Portfolio Updated](#-keeping-the-portfolio-updated)
 11. [💡 Optional Tips](#-optional-tips)
 12. [🙌 Credits](#-credits)
+    
 
 ## 🔍 Project Overview
 
@@ -35,6 +37,8 @@ This project is a **personal portfolio website** created using a free template t
 - ✅ Maintain and update your site easily
 
 **Perfect for beginners** - no prior web development experience required! 🎯
+
+---  
 
 ## 🛠️ Prerequisites
 
@@ -62,6 +66,8 @@ You should see something like: `git version 2.xx.x`
 - 🔗 [Sign up for GitHub](https://github.com/) if you don't have an account
 - Choose a professional username (this will be part of your website URL!)
 
+---  
+
 ## 🎨 How to Find a Portfolio Template
 
 ### 🌟 Recommended Template Sources:
@@ -87,6 +93,8 @@ You should see something like: `git version 2.xx.x`
 3. Extract it to a folder on your computer
 4. Rename the folder to something like `my-portfolio`
 
+---  
+
 ## 📁 Create a GitHub Repository
 
 ### Step-by-Step Repository Setup:
@@ -100,6 +108,7 @@ You should see something like: `git version 2.xx.x`
    - **Initialize with README:** Leave unchecked ❌
 4. **Click** "Create repository"
 5. **Copy the repository URL** for the next step
+
 
 ## 💻 Clone the Repository Locally
 
@@ -129,6 +138,7 @@ You should see something like: `git version 2.xx.x`
 
 Your empty repository is now ready for customization! 📂
 
+---  
 ## 🧑‍🎨 Customize the Template
 
 ### Setup Your Workspace:
@@ -147,7 +157,7 @@ Your empty repository is now ready for customization! 📂
 - **`style.css`** (or `/css/style.css`) → Design and layout styles
 - **`/img`** or **`/assets`** → Replace with your images
 
-
+---  
 ## 🧪 Test the Website Locally
 
 ### Preview Your Changes:
@@ -164,6 +174,7 @@ Your empty repository is now ready for customization! 📂
 
 **Pro tip:** Keep the browser tab open and refresh after making changes!
 
+  
 ## 🚀 Push Changes to GitHub
 
 ### Upload Your Customized Website:
@@ -192,6 +203,7 @@ git push -u origin main
 
 Your customized code is now on GitHub! 🎉
 
+---  
 ## 🌍 Deploy Using GitHub Pages
 
 ### Make Your Site Live:
@@ -205,6 +217,7 @@ Your customized code is now on GitHub! 🎉
    - **Folder:** / (root) ✅
 5. **Click "Save"**
 
+---  
 ### ✅ Your Site is Live!
 
 After 2-5 minutes, your portfolio will be available at:
@@ -216,6 +229,7 @@ You can find the exact URL in the Pages settings with a green checkmark! 🌟
 
 ## 🔄 Keeping the Portfolio Updated
 
+---  
 ### Making Future Changes:
 
 Updating your portfolio is simple:
@@ -231,6 +245,7 @@ Updating your portfolio is simple:
 
 4. **Changes go live automatically** within 1-2 minutes
 
+---  
 ### 📅 Regular Maintenance:
 - Add new projects as you complete them
 - Update your skills and experience
@@ -238,7 +253,8 @@ Updating your portfolio is simple:
 - Keep contact information current
 - Fix any broken links or outdated information
 
-## 💡 Optional Tips
+---
+## 💡 Optional Tips  
 
 ### 🌟 Advanced Enhancements:
 
@@ -256,9 +272,6 @@ Updating your portfolio is simple:
 - Create a `favicon.ico` file
 - Add it to your root directory
 - Link it in your HTML ``:
-```html
-
-```
 
 
 ## 📬 Need Help?
