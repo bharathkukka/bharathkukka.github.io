@@ -1,10 +1,26 @@
 
-:root {
-  --default-font: "Roboto",  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --heading-font: "Ubuntu",  sans-serif;
-  --nav-font: "Nunito",  sans-serif;
-}
+/*:root {*/
+/*  --default-font: "Roboto",  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";*/
+/*  --heading-font: "Ubuntu",  sans-serif;*/
+/*  --nav-font: "Nunito",  sans-serif;*/
+/*}*/
 
+/* 1. Import Inter and Poppins from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Poppins:wght@600;700&display=swap');
+
+/* 2. Update your CSS variables */
+:root {
+  /* Inter is perfect for clean, readable body text */
+  --default-font: "Inter", sans-serif;
+  --nav-font: "Inter", sans-serif;
+
+  /* Poppins adds a touch of modern style to headings */
+  --heading-font: "Poppins", sans-serif;
+}
+.project-title {
+  color: #B2AC88; /* A stylish vintage green */
+  font-weight: 600;  /* Keeps the text bold and prominent */
+}
 /* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
 :root { 
   --background-color: #1f1f1f; /* Background color for the entire website, including individual sections */
