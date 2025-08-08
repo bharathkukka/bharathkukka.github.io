@@ -4,7 +4,7 @@
 
 Welcome to the repository for my personal portfolio website! This project was a fantastic learning experience, starting with a free, responsive Bootstrap template and transforming it into a unique site that showcases my skills, projects, and professional journey.
 
-[➡️ Live Demo:](https://bhaarathkukka.github.io)
+[➡️ Live Demo:](https://bharathkukka.github.io)
 
 Think of this repository not just as code, but as a **blueprint**. I've written this guide to walk you through how I built it, and more importantly, how you can easily create and deploy your very own version. Let's get started! 🚀  
 
@@ -282,5 +282,6 @@ Updating your portfolio is simple:
 - **GitHub Pages:** [GitHub Pages Documentation](https://docs.github.com/en/pages)
 - **HTML/CSS Help:** [W3Schools](https://www.w3schools.com/) or [MDN Web Docs](https://developer.mozilla.org/)
 - **Bootstrap Help:** [Bootstrap Documentation](https://getbootstrap.com/docs/)
+
 
 
