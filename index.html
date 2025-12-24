@@ -667,97 +667,97 @@
 
     </section><!-- /Portfolio Section -->
 
-      
-    <!-- Services Section -->
-  <section id="services" class="services section">
 
-  <div class="container section-title" data-aos="fade-up">
+<!-- Achievements & Certifications Section -->
+<section id="services" class="services section">
+
+  <div class="container section-title text-center" data-aos="fade-up">
     <h2>Achievements & Certifications</h2>
-    <p></p>
-  </div>
+    <p>View certificates using the links below.</p>
+  </div><!-- End Section Title -->
+
   <div class="container" data-aos="fade-up" data-aos-delay="100">
 
-    <div class="service-header">
-      <div class="row align-items-center">
-        <div class="col-lg-8 col-md-12">
-          <div class="service-intro">
-            <h2 class="service-heading">
-              </h2>
-          </div>
-        </div>
-      </div>
-    </div>
-
     <div class="row justify-content-center">
-      <div class="col-lg-4 col-md-6 mb-4 d-flex align-items-stretch">
-      <a href="#" class="service-card position-relative z-1 w-100 d-flex flex-column"
-         data-bs-toggle="modal" data-bs-target="#certificateModal" data-certificate-src="assets/img/Certificates/DeansList.png">
-        <div class="service-icon">
-        <i class="bi bi-award"></i>
-        </div>
-        <h3>Certification <span>Dean's List</span></h3>
-        <p>
-        Awarded for outstanding academic performance and inclusion in the Dean's List at Manav Rachna University.
-        </p>
-        <img src="assets/img/Certificates/DeansList.png" alt="Dean's List Certificate" class="img-fluid mt-2 rounded shadow-sm" style="max-height: 180px; object-fit: contain;">
-      </a>
-      </div>
 
-      <script>
-      document.addEventListener('DOMContentLoaded', function () {
-        var certificateModal = document.getElementById('certificateModal');
-        var modalImg = document.getElementById('modalCertificateImage');
-        var serviceCards = document.querySelectorAll('.service-card[data-certificate-src]');
+  <!-- Research Paper Card -->
+<div class="col-lg-4 col-md-6 mb-4 d-flex align-items-stretch">
+  <a href="https://drive.google.com/drive/folders/1V2d31YG9A0KBDq6s5qKGYsUrIRyOivYh?usp=share_link"
+     class="service-card position-relative z-1 w-100 d-flex flex-column text-center"
+     target="_blank" rel="noopener noreferrer">
 
-        serviceCards.forEach(function(card) {
-        card.addEventListener('click', function(e) {
-          var src = card.getAttribute('data-certificate-src');
-          if (src && modalImg) {
-          modalImg.src = src;
-          }
-        });
-        });
-
-
-        certificateModal.addEventListener('hidden.bs.modal', function () {
-        if (modalImg) modalImg.src = '';
-        });
-      });
-      </script>
-
-      <div class="col-lg-4 col-md-6 mb-4 d-flex align-items-stretch">
-      <a href="#" class="service-card position-relative z-1 w-100 d-flex flex-column"
-         data-bs-toggle="modal" data-bs-target="#certificateModal" data-certificate-src="assets/img/Certificates/Nptel.png">
-        <div class="service-icon">
-        <i class="bi bi-award"></i>
-        </div>
-        <h3>Certification <span>NPTEL Robotics & Control</span></h3>
-        <p>
-        Successfully completed the NPTEL Robotics and Control course. Covered kinematics, dynamics, and control of robotic systems with hands-on assignments and final exam.
-        </p>
-        <img src="assets/img/Certificates/Nptel.png" alt="NPTEL Robotics Certificate" class="img-fluid mt-2 rounded shadow-sm" style="max-height: 180px; object-fit: contain;">
-      </a>
-      </div>
-
+    <div class="service-icon mb-2">
+      <i class="bi bi-journal-text fs-2"></i>
+      <span class="visually-hidden">Research Paper Publication</span>
     </div>
 
+    <h3>Research Publication</h3>
+    <p>Co-authored and presented a paper on robotic arm design at ICIACS 2025, published in 4th and 6th semesters.</p>
+
+    <div class="mt-auto pt-2">
+      <i class="bi bi-box-arrow-up-right fs-5"></i>
+      <span class="visually-hidden">View Paper</span>
     </div>
 
-  </section>
+  </a>
+</div>
 
-  <div class="modal fade" id="certificateModal" tabindex="-1" aria-labelledby="certificateModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered modal-xl">
-    <div class="modal-content">
-      <div class="modal-header">
-      <h5 class="modal-title" id="certificateModalLabel">View Certificate</h5>
-      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body text-center">
-      <img src="" id="modalCertificateImage" class="img-fluid" alt="Certificate Image">
-      </div>
+
+     <!-- Dean's List Card -->
+<div class="col-lg-4 col-md-6 mb-4 d-flex align-items-stretch">
+  <a href="https://drive.google.com/drive/folders/1xqomxaP5rx4ryo8SnT0IK8gG0lvkBpPZ?usp=share_link"
+     class="service-card position-relative z-1 w-100 d-flex flex-column text-center"
+     target="_blank" rel="noopener noreferrer">
+
+    <div class="service-icon mb-2">
+      <i class="bi bi-award fs-2"></i>
+      <span class="visually-hidden">Dean’s List Award</span>
     </div>
+
+    <h3>Dean’s List</h3>
+    <p>Awarded for top academic performance at Manav Rachna University in 4th and 6th semesters.</p>
+
+    <div class="mt-auto pt-2">
+      <i class="bi bi-box-arrow-up-right fs-5"></i>
+      <span class="visually-hidden">View Certificate</span>
     </div>
-  </div><!-- /Services Section -->
+
+  </a>
+</div>
+
+<!-- All Certifications Card (Single Drive Folder Link) -->
+<div class="col-lg-4 col-md-6 mb-4 d-flex align-items-stretch justify-content-center">
+  <a href="https://drive.google.com/drive/folders/18wwC8cdL2FZLHAN9jHRLg1uPKI28FAPQ?usp=share_link"
+     class="service-card position-relative z-1 w-100 d-flex flex-column text-center"
+     target="_blank" rel="noopener noreferrer">
+
+    <div class="service-icon mb-2">
+      <i class="bi bi-folder2-open fs-2"></i>
+      <span class="visually-hidden">Certifications Folder</span>
+    </div>
+
+    <h3>Certifications</h3>
+      <p> • Java (Coding Ninjas)</p>
+      <p>• Python Web Dev (Infosys Foundation)</p>
+      <p>•  Robotics & Control (NPTEL) </p>
+
+    <div class="mt-auto pt-2">
+      <i class="bi bi-box-arrow-up-right fs-5"></i>
+      <span class="visually-hidden">Open Drive Folder</span>
+    </div>
+
+  </a>
+</div>
+
+
+      <!-- (Optional) Add more cards below in same format -->
+
+    </div><!-- End Row -->
+
+  </div><!-- End Container -->
+
+</section><!-- End Achievements & Certifications Section -->
+
 
 
           <!-- Contact Section -->
