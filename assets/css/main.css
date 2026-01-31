@@ -6,7 +6,7 @@
 /*}*/
 
 /* 1. Import Inter and Poppins from Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Poppins:wght@600;700&display=swap');
+
 
 /* 2. Update your CSS variables */
 :root {
@@ -2443,4 +2443,8 @@ section,
 /* Create the second diagonal line: / */
 .not-working::after {
   transform: translate(-50%, -50%) rotate(-45deg);
+}
+.contact-image {
+  max-width: 600px;
+  transform: translate(-46px, 50px);
 }
